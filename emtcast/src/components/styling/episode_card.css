@@ -1,48 +1,52 @@
 :root {
-  --red: #b00;
-  --blue: rgb(0, 97, 187);
-  --light: rgb(179, 179, 179);
+	--red: #b00;
+	--blue: rgb(0, 97, 187);
+	--light: rgb(179, 179, 179);
 }
 .container {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 100px;
-  padding: 10px;
-  position: fixed;
-  left: 70%;
-  top: 43%;
-  width: 300px;
-  height: 100px;
-  box-shadow: 0 2px 2px 0 var(--light), 0 2px 15px 0 var(--light);
-  border: solid 3px var(--light);
-  border-radius: 2%;
-  color: rgb(255, 255, 255);
-  text-align: left;
-  grid-gap: 10px;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: 100px;
+	padding-top: 5%;
+
+	/* width: 300px; */
+	max-width: 350px;
+	height: 160px;
+	box-shadow: 0 2px 2px 0 var(--light), 0 2px 15px 0 var(--light);
+	border: solid 3px var(--light);
+	border-radius: 2%;
+	color: rgb(255, 255, 255);
+	text-align: left;
+	grid-gap: 20px;
 }
 h4 {
-  font-style: italic;
-  text-decoration: underline;
+	font-style: italic;
+	text-decoration: underline;
 }
 p {
-  font-size: 14px;
-  margin: 0;
+	font-size: 14px;
+	margin: 0;
 }
 .triangle {
-  box-sizing: border-box;
-  display: block;
-  width: 80px;
-  height: 80px;
-  padding-top: 14px;
-  padding-left: 8px;
-  line-height: 20px;
-  border: 6px solid #fff;
-  border-radius: 50%;
-  color: #f5f5f5;
-  text-align: center;
-  text-decoration: none;
-  background-color: transparent;
-  font-size: 20px;
-  font-weight: bold;
-  transition: all 0.3s ease;
+	box-sizing: border-box;
+	display: block;
+	width: 80px;
+	height: 80px;
+	padding-top: 14px;
+	padding-left: 8px;
+	line-height: 20px;
+	border: 6px solid #fff;
+	border-radius: 50%;
+	color: #f5f5f5;
+	text-align: center;
+	text-decoration: none;
+	background-color: transparent;
+	font-size: 20px;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+/* not working for some reason */
+.triangle:hover {
+	color: red;
+	border: 6px solid red;
 }
