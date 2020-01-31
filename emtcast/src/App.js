@@ -18,9 +18,9 @@ function App() {
   };
   return (
     <div className="App">
-      <header className="header">
+      {/* <header className="header">
         <CustomNavbar />
-      </header>
+      </header> */}
       <div className="latestEpisode">
         <EpisodeCard data={data1} />
       </div>

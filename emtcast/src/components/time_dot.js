@@ -18,9 +18,9 @@ export default class time_dot extends Component {
     this.timer = setInterval(
       () =>
         this.setState({
-          dotLeft: this.state.dotLeft + 1
+          dotLeft: this.state.dotLeft + 0.05
         }),
-      1000
+      50
     );
   }
   render() {
@@ -47,8 +47,8 @@ export default class time_dot extends Component {
           <line className="line5" x1="60%" y1="50%" x2="100%" y2="50%" />
           {/* <BgLine /> */}
         </svg>
+        <button onClick={this.startTimer}>start</button>
       </div>
-      // <button onClick={this.startTimer}>start</button>
     );
   }
 }
