@@ -1,25 +1,25 @@
 .line1 {
-  stroke: red;
-  stroke-width: 3px;
+	stroke: red;
+	stroke-width: 3px;
 }
 .line2 {
-  stroke: red;
-  stroke-width: 3px;
+	stroke: red;
+	stroke-width: 3px;
 }
 .line3 {
-  stroke: red;
-  stroke-width: 3px;
+	stroke: red;
+	stroke-width: 3px;
 }
 .line4 {
-  stroke: red;
-  stroke-width: 3px;
+	stroke: red;
+	stroke-width: 3px;
 }
 .line5 {
-  stroke: red;
-  stroke-width: 3px;
+	stroke: red;
+	stroke-width: 3px;
 }
 .svgContainer {
-  height: 100%;
-  width: 100%;
-  filter: drop-shadow(0 0 0.75rem crimson);
+	height: 90%;
+	width: 100%;
+	filter: drop-shadow(0 0 0.75rem crimson);
 }

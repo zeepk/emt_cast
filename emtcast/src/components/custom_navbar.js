@@ -9,8 +9,8 @@ export default class custom_navbar extends Component {
 				<Navbar.Brand href="#home">EMTcast</Navbar.Brand>
 				<Nav className="ml-auto">
 					<Nav.Link href="#home">Home</Nav.Link>
-					<Nav.Link href="#features">Episodes</Nav.Link>
-					<Nav.Link href="#pricing">About</Nav.Link>
+					<Nav.Link href="#about">About</Nav.Link>
+					<Nav.Link href="#episodeList">Episodes</Nav.Link>
 				</Nav>
 			</Navbar>
 		);

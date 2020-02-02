@@ -5,8 +5,10 @@ export default class episode extends Component {
 	render() {
 		return (
 			<div className="episodeContainer">
-				<div className="triangle">
-					<i className="fa fa-play fa-2x"></i>
+				<div className="playContainer">
+					<div className="episodeTriangle">
+						<i className="fa fa-play fa-2x"></i>
+					</div>
 				</div>
 				<div className="episodeGridItem">
 					<h4>{this.props.data.title}</h4>

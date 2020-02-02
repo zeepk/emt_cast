@@ -6,6 +6,8 @@ import CustomNavbar from './components/custom_navbar';
 import Dot from './components/time_dot';
 import EpisodeCard from './components/episode_card';
 import EpisodeList from './components/episode_list';
+import About from './components/about';
+
 function App() {
 	const data = [
 		{
@@ -22,7 +24,7 @@ function App() {
 	];
 
 	return (
-		<div className="App">
+		<div id="home" className="App">
 			<header className="header">
 				<CustomNavbar />
 			</header>
@@ -32,8 +34,14 @@ function App() {
 			<div className="randomEpisode">
 				<EpisodeCard data={data[1]} />
 			</div>
+
 			<Dot />
-			<EpisodeList data={data} />
+			<div id="about" className="about">
+				<About />
+			</div>
+			<div id="episodeList" className="episodeList">
+				<EpisodeList data={data} />
+			</div>
 		</div>
 	);
 }

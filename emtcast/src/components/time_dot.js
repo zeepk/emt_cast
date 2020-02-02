@@ -1,16 +1,24 @@
 import React, { Component } from 'react';
-
+import Button from 'react-bootstrap/Button';
 export default class time_dot extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
 			dotLeft: 0,
-			dotTop: 49,
-			speed: 0.1
+			dotTop: 44,
+			speed: 0.01
 		};
 		this.startTimer = this.startTimer.bind(this);
 		this.myStopFunction = this.myStopFunction.bind(this);
+		this.reset = this.reset.bind(this);
 	}
+
+	reset = () => {
+		this.setState({
+			dotLeft: 0,
+			dotTop: 44
+		});
+	};
 
 	startTimer() {
 		this.setState({
@@ -24,21 +32,21 @@ export default class time_dot extends Component {
 					dotLeft: 98
 				});
 			} else if (
-				(this.state.dotLeft >= 39.5 && this.state.dotLeft <= 44.5) ||
-				(this.state.dotLeft >= 54.5 && this.state.dotLeft <= 59.5)
+				(this.state.dotLeft >= 39.5 && this.state.dotLeft <= 44.2) ||
+				(this.state.dotLeft >= 54.7 && this.state.dotLeft <= 59.2)
 			) {
 				this.setState({
 					dotLeft: this.state.dotLeft + this.state.speed,
 					dotTop: this.state.dotTop - this.state.speed * 4
 				});
-			} else if (this.state.dotLeft > 44.5 && this.state.dotLeft < 54.5) {
+			} else if (this.state.dotLeft > 44.2 && this.state.dotLeft < 54.7) {
 				this.setState({
 					dotLeft: this.state.dotLeft + this.state.speed,
-					dotTop: this.state.dotTop + this.state.speed * 4
+					dotTop: this.state.dotTop + this.state.speed * 3.5
 				});
 			} else {
 				this.setState({
-					dotLeft: this.state.dotLeft + this.state.speed * 3
+					dotLeft: this.state.dotLeft + this.state.speed * 10
 				});
 			}
 		}, 1);
@@ -58,10 +66,13 @@ export default class time_dot extends Component {
 			top: `${this.state.dotTop}%`
 			// zIndex: 2
 		};
+		let bgStyle = {
+			backgroundColor: '#282c34'
+		};
 		// console.log(this.state.dotLeft + ', ' + this.state.dotTop);
 
 		return (
-			<div className="bgContainer">
+			<div className="bgContainer" style={bgStyle}>
 				<div style={dotStyle}></div>
 				<svg className="svgContainer">
 					<line className="line1" x1="0" y1="50%" x2="40%" y2="50%" />
@@ -71,8 +82,15 @@ export default class time_dot extends Component {
 					<line className="line5" x1="60%" y1="50%" x2="100%" y2="50%" />
 					{/* <BgLine /> */}
 				</svg>
-				<button onClick={this.startTimer}>start</button>
-				<button onClick={this.myStopFunction}>stop</button>
+				<Button variant="info" onClick={this.startTimer}>
+					Test Start
+				</Button>
+				<Button variant="dark" onClick={this.myStopFunction}>
+					Test Pause
+				</Button>
+				<Button variant="light" onClick={this.reset}>
+					Test Reset
+				</Button>
 			</div>
 		);
 	}

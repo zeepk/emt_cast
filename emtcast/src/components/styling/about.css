@@ -1,0 +1,25 @@
+.aboutContainer {
+	background-color: black;
+	color: white;
+}
+
+.aboutTitle {
+	font-size: 8vh;
+	text-align: left;
+	/* padding: 5vh 0 0 5vw; */
+}
+.aboutTextContainer {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 300px;
+	padding: 5vh 10vw 5vh 10vh;
+}
+.aboutText {
+	text-align: left;
+}
+.aboutPics {
+	text-align: center;
+}
+.aboutPic1 {
+	max-height: 100%;
+}

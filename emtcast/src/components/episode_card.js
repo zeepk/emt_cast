@@ -23,8 +23,10 @@ export default class episode_card extends Component {
 		);
 		return (
 			<div className="episodeCardContainer">
-				<div className="triangle">
-					<i className="fa fa-play fa-2x"></i>
+				<div className="cardPlayContainer">
+					<div className="triangle">
+						<i className="fa fa-play fa-2x"></i>
+					</div>
 				</div>
 				<div className="episodeCardGridItem">
 					<h4>{this.props.data.title}</h4>

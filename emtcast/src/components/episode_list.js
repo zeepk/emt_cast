@@ -6,6 +6,7 @@ export default class episode_list extends Component {
 	render() {
 		return (
 			<div className="episodeListContainer">
+				<br />
 				<h1 className="title">Episodes</h1>
 				<ul>
 					<li>
