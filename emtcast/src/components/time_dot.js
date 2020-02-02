@@ -6,7 +6,7 @@ export default class time_dot extends Component {
 		this.state = {
 			dotLeft: 0,
 			dotTop: 44,
-			speed: 0.01
+			speed: 0.005
 		};
 		this.startTimer = this.startTimer.bind(this);
 		this.myStopFunction = this.myStopFunction.bind(this);
@@ -46,7 +46,7 @@ export default class time_dot extends Component {
 				});
 			} else {
 				this.setState({
-					dotLeft: this.state.dotLeft + this.state.speed * 10
+					dotLeft: this.state.dotLeft + this.state.speed * 3
 				});
 			}
 		}, 1);

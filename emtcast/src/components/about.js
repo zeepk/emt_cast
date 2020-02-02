@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './styling/about.css';
+import Zoom from 'react-reveal/Zoom';
 
 class about extends Component {
 	render() {
@@ -23,11 +24,13 @@ class about extends Component {
 						</p>
 					</div>
 					<div className="aboutPics">
-						<img
-							className="aboutPic1"
-							src={require('./../images/profile1.jpg')}
-							alt="Profile"
-						/>
+						<Zoom>
+							<img
+								className="aboutPic1"
+								src={require('./../images/profile1.jpg')}
+								alt="Profile"
+							/>
+						</Zoom>
 					</div>
 				</div>
 			</div>
