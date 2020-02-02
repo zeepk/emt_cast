@@ -1,21 +1,25 @@
 .App {
-  text-align: center;
-  background-color: #282c34;
-  height: 100vh;
+	text-align: center;
+	background-color: #282c34;
+	height: 100vh;
 }
 .header {
-  background-color: #282c34;
+	background-color: #282c34;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
 }
 .latestEpisode {
-  position: absolute;
-  left: 70%;
-  top: 37%;
+	position: absolute;
+	left: 70%;
+	top: 30%;
 }
 .randomEpisode {
-  position: absolute;
-  left: 10%;
-  top: 37%;
+	position: absolute;
+	left: 10%;
+	top: 30%;
 }
 .bgContainer {
-  height: 100vh;
+	height: 100vh;
 }
