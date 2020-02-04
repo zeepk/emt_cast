@@ -48,8 +48,10 @@ p {
 }
 /* not working for some reason */
 .triangle:hover {
-	color: red;
-	border: 6px solid red;
+	color: rgba(255, 87, 87, 0.767);
+
+	transition: all 0.1s ease-in-out;
+	border: 6px solid rgba(255, 87, 87, 0.767);
 }
 .episodeCardGridItem {
 	padding: 4px;

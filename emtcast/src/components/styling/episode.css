@@ -40,7 +40,7 @@ p {
 	background-color: transparent;
 	font-size: 40px;
 	font-weight: bold;
-	transition: all 0.3s ease;
+	transition: all 0.3s ease-in-out;
 }
 /* not working for some reason */
 .episodeTriangle:hover {
