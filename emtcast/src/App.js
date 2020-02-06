@@ -26,7 +26,7 @@ function App() {
 	return (
 		<div id="home" className="App">
 			<header className="header">
-				<CustomNavbar />
+				<CustomNavbar title={'nice'} />
 			</header>
 			<div className="latestEpisode">
 				<EpisodeCard data={data[0]} />
@@ -34,7 +34,6 @@ function App() {
 			<div className="randomEpisode">
 				<EpisodeCard data={data[1]} />
 			</div>
-
 			<Dot />
 			<div id="about" className="about">
 				<About />
