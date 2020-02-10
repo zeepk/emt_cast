@@ -22,6 +22,11 @@
 h4 {
 	font-style: italic;
 	text-decoration: underline;
+	cursor: pointer;
+}
+h4:hover {
+	color: rgba(255, 87, 87, 0.767);
+	transition: all 0.1s ease-in-out;
 }
 p {
 	font-size: 14px;
@@ -45,6 +50,7 @@ p {
 	font-weight: bold;
 	transition: all 0.3s ease-in-out;
 	margin-left: 10px;
+	cursor: pointer;
 }
 /* not working for some reason */
 .triangle:hover {

@@ -5,6 +5,7 @@ export default class episode extends Component {
 	render() {
 		return (
 			<Fade left>
+				<hr />
 				<div className="episodeContainer">
 					<div className="playContainer">
 						<div className="episodeTriangle">

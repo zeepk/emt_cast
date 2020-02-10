@@ -5,13 +5,12 @@ import NowPlaying from './now_playing';
 export default class custom_navbar extends Component {
 	constructor(props) {
 		super(props);
-		this.state = { title: this.props.title, time: '' };
+		this.state = { episode: this.props.episode };
 	}
 	componentDidUpdate(prevProps) {
-		if (!(this.props.title === prevProps.title)) {
+		if (!(this.props.episode === prevProps.episode)) {
 			this.setState({
-				title: this.props.title
-				// time: this.props.time
+				episode: this.props.episode
 			});
 		}
 	}
@@ -19,8 +18,8 @@ export default class custom_navbar extends Component {
 		return (
 			<Navbar bg="dark" variant="dark">
 				<Navbar.Brand href="#home">EMTcast</Navbar.Brand>
-				<Nav className="mr-auto ml-auto">
-					<NowPlaying title={this.state.title} />
+				<Nav className=" ml-auto">
+					<NowPlaying npEpisode={this.state.episode} />
 				</Nav>
 				<Nav className="ml-auto">
 					<Nav.Link href="#home">Home</Nav.Link>

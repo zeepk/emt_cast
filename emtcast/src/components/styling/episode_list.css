@@ -1,5 +1,5 @@
 .episodeListContainer {
-	background-color: #282c34c5;
+	background-color: #303b52c5;
 	color: white;
 }
 ul {
@@ -9,5 +9,5 @@ ul {
 .title {
 	font-size: 8vh;
 	text-align: left;
-	padding: 5vh 0 0 5vw;
+	padding: 5vh 0 5vh 5vw;
 }

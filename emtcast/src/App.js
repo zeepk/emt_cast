@@ -26,7 +26,7 @@ function App() {
 	return (
 		<div id="home" className="App">
 			<header className="header">
-				<CustomNavbar title={'nice'} />
+				<CustomNavbar episode={data[0]} />
 			</header>
 			<div className="latestEpisode">
 				<EpisodeCard data={data[0]} />

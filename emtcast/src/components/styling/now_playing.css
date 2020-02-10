@@ -1,0 +1,25 @@
+.nowPlayingContainer {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	/* grid-template-rows: 50% 50%; */
+	grid-gap: 0 5vw;
+	color: white;
+}
+.nowPlayingInfo {
+	text-decoration: none;
+	text-align: left;
+}
+.nowPlayingTitle {
+	text-decoration: underline;
+	font-style: italic;
+	text-align: right;
+}
+.nowPlayingTime {
+	text-align: right;
+}
+i {
+	cursor: pointer;
+}
+i:hover {
+	color: rgba(255, 87, 87, 0.767);
+}
